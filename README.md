@@ -16,4 +16,13 @@ There are no Tutorials on the Scripts as of right now but I made sure to add a s
 # Credits
 - Modelleicher
 
+# Installation and Use
+- To Install these Scripts into your Giants Editor:
+In your Giants Editor go to Window -> Script Editor. It opens the Script Editor. Now on the left side you see a List of Folders.
+Right-Click on "User Scripts" and select "Explore Folder". Now you are in the Folder where the Scripts are saved.
+Simply copy the 'METools' Folder there and restart GE.
+(Alternatively, the 'User Scripts' Folder is AppData/Local/Giants Editor 64bit *VERSION*/scripts/ - copy METools there. This way you can skip using GE to find the Folder)
+
 # Changelog:
+- Added METools - Spline Exporter
+- Added METools - Set Terrain Height Interpolated
