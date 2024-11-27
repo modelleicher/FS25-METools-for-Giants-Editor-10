@@ -24,5 +24,10 @@ Simply copy the 'METools' Folder there and restart GE.
 (Alternatively, the 'User Scripts' Folder is AppData/Local/Giants Editor 64bit *VERSION*/scripts/ - copy METools there. This way you can skip using GE to find the Folder)
 
 # Changelog:
+
+-- 27.11.2024
+- added METools - Place Objects Along Spline
+
+-- First Github Release
 - Added METools - Spline Exporter
 - Added METools - Set Terrain Height Interpolated
