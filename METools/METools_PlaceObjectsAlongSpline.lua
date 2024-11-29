@@ -6,6 +6,9 @@
 -- Hide: no
 -- AlwaysLoaded: no
 
+-- Changelog:
+-- 29.11.2024 fixed input not accepting negative values
+
 
 -- set the adjustable Variables and Functions 
 ---------------------------------------------
@@ -208,12 +211,12 @@ meToolsUtils_addSlider("Object Distance Min:", 1, 0, 100, setObjectDistance, "fl
 meToolsUtils_addSlider("Object Distance Max:", 1, 0, 100, setDistanceBetweenObjectsRandomMax, "float", labelWidthFrame, 17)
 
 
-meToolsUtils_addSlider("Side Offset Min:", 1, 0, 100, setSideOffset, "float", labelWidthFrame, 3)
-meToolsUtils_addSlider("Side Offset Max:", 1, 0, 100, setSideOffsetRandomMax, "float", labelWidthFrame, 17)
+meToolsUtils_addSlider("Side Offset Min:", 1, -100, 100, setSideOffset, "float", labelWidthFrame, 3)
+meToolsUtils_addSlider("Side Offset Max:", 1, -100, 100, setSideOffsetRandomMax, "float", labelWidthFrame, 17)
 
 
-meToolsUtils_addSlider("Y Offset Min:", 1, 0, 100, setYOffset, "float", labelWidthFrame, 3)
-meToolsUtils_addSlider("Y Offset Max:", 1, 0, 100, setYOffsetRandomMax, "float", labelWidthFrame, 17)
+meToolsUtils_addSlider("Y Offset Min:", 1, -100, 100, setYOffset, "float", labelWidthFrame, 3)
+meToolsUtils_addSlider("Y Offset Max:", 1, -100, 100, setYOffsetRandomMax, "float", labelWidthFrame, 17)
 
 meToolsUtils_addCheckBox("Adjust to Terrain Height      ", "", setAdjustToTerrain, labelWidthFrame, 15)
 meToolsUtils_addCheckBox("Random Y Rotation      ", "", setRandomYRotation, labelWidthFrame, 15)
@@ -242,5 +245,6 @@ meToolsUtils_addLabel("                     For this to work create a Transformg
 meToolsUtils_addLabel("                     Objects to randomize from and select the Transformgroup ", nil, labelWidthFrame, 3)
 meToolsUtils_addLabel("                     instead of the Object ", nil, labelWidthFrame, 30)
 
+meToolsUtils_addLabel("METools - by modelleicher", nil, labelWidthFrame, 0)
 myFrame:showWindow()
 
